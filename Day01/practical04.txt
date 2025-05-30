@@ -1,0 +1,55 @@
+
+touch - create a file.
+
+{ ~ }  » touch xyz.txt   
+
+vi - Open a file
+                                                     ~
+{ ~ }  » vi xyz.txt    
+Switch to Insert Mode (to start typing):
+		>>Press i (insert) or a (append).
+
+	Save and Exit:
+		>>Press ctrl + c, then type :wq! and press Enter.
+                        
+more - give the data inside the file.
+						~
+{ ~ }  » more xyz.txt                                                         ~
+Hello! Welcome to Linux
+This is the First Day
+Stay tuned!
+
+dir - display all the files in the directory.
+dir *.txt - display all the files with .txt extension.
+
+{ ~ }  » dir *.txt                                                            ~
+xyz.txt
+
+find - search for files and directories.
+find *y* - search for all the directories and files with the character "y"
+
+{ ~ }  » find *y*                                                             ~
+xyz.txt
+
+chmod(Change Mode) – file permission command.
+444 - file is read only for user, server and admin.
+
+{ ~ }  » chmod 444 xyz.txt 
+ 
+ls -l	Long format (detailed view).
+                                                  ~
+{ ~ }  » ls -l                                                                ~
+total 3
+lrwxrwxrwx  1 Admin None 22 Apr 25 03:45 bin -> /home/Admin/.local/bin
+-rw-rwxr--+ 1 Admin None  1 Apr 25 03:57 first.sh
+-r--r--r--+ 1 Admin None 58 May 31 04:20 xyz.txt
+-rw-rwxr--+ 1 Admin None  0 May 31 04:18 xyz.txt~
+
+{ ~ }  » chmod 777 xyz.txt                                                    ~
+{ ~ }  » ls -l                                                                ~
+total 3
+lrwxrwxrwx  1 Admin None 22 Apr 25 03:45 bin -> /home/Admin/.local/bin
+-rw-rwxr--+ 1 Admin None  1 Apr 25 03:57 first.sh
+-rwxrwxrwx+ 1 Admin None 58 May 31 04:20 xyz.txt
+-rw-rwxr--+ 1 Admin None  0 May 31 04:18 xyz.txt~
+{ ~ }  »               
